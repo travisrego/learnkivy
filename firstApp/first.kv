@@ -1,0 +1,53 @@
+AnchorLayoutExample:
+
+<AnchorLayoutExample>:
+    anchor_x: 'center'
+    anchor_y: 'center'
+    Button:
+        text: "Login"
+        size_hint: .2, .1
+
+#    Button:
+#        text: "Register"
+#        size_hint: .2, .2
+
+<FirstAppWidget>:
+    Button:
+        text: "Register"
+        size: "100dp", "80dp"
+    Label:
+        text: "Login"
+        size: "100dp", "80dp"
+        pos: "100dp", "0dp"
+
+<BoxLayoutExample>:
+    orientation: "vertical"
+    spacing: "20dp"
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "X"
+            size: "50dp", "50dp"
+            size_hint: None, None
+            pos_hint: {"left":.5}
+
+    Button:
+        text: "Login"
+        size_hint: .2, None
+        height: "60dp"
+        pos_hint: {"center_x": .5}
+
+    Button:
+        text: "Register"
+        size_hint: .2, None
+        height: "60dp"
+        pos_hint: {"center_x": .5}
+
+
+    BoxLayout:
+        orientation: "horizontal"
+        Button:
+            text: "Settings"
+            size: "50dp", "50dp"
+            size_hint: None, None
+            pos_hint: {"right":.5}
