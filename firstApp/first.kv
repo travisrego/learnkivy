@@ -1,53 +1,91 @@
-AnchorLayoutExample:
+LoginPage:
 
-<AnchorLayoutExample>:
-    anchor_x: 'center'
-    anchor_y: 'center'
-    Button:
-        text: "Login"
-        size_hint: .2, .1
+<LoginPage>:
+    AnchorLayout:
+        AnchorLayout:
+            anchor_x: 'right'
+            anchor_y: 'top'
+            size_hint: .1, .1
+            Button:
+                text: "Hi"
 
+        BoxLayout:
+            size_hint: .2, .18
+            spacing: "3dp"
+            orientation: 'vertical'
+            Button:
+                text: "Login"
+            Button:
+                text: "Register"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#<AnchorLayoutExample>:
+#    anchor_x: 'center'
+#    anchor_y: 'center'
+#    BoxLayout:
+#        orientation: 'vertical'
+#        size_hint: .2, .1
+#        Button:
+#            text: "Login"
+#        Button:
+#            text: "Register"
+#
+#
+#<FirstAppWidget>:
 #    Button:
 #        text: "Register"
-#        size_hint: .2, .2
-
-<FirstAppWidget>:
-    Button:
-        text: "Register"
-        size: "100dp", "80dp"
-    Label:
-        text: "Login"
-        size: "100dp", "80dp"
-        pos: "100dp", "0dp"
-
-<BoxLayoutExample>:
-    orientation: "vertical"
-    spacing: "20dp"
-    BoxLayout:
-        orientation: "horizontal"
-        Button:
-            text: "X"
-            size: "50dp", "50dp"
-            size_hint: None, None
-            pos_hint: {"left":.5}
-
-    Button:
-        text: "Login"
-        size_hint: .2, None
-        height: "60dp"
-        pos_hint: {"center_x": .5}
-
-    Button:
-        text: "Register"
-        size_hint: .2, None
-        height: "60dp"
-        pos_hint: {"center_x": .5}
-
-
-    BoxLayout:
-        orientation: "horizontal"
-        Button:
-            text: "Settings"
-            size: "50dp", "50dp"
-            size_hint: None, None
-            pos_hint: {"right":.5}
+#        size: "100dp", "80dp"
+#    Label:
+#        text: "Login"
+#        size: "100dp", "80dp"
+#        pos: "100dp", "0dp"
+#
+#<BoxLayoutExample>:
+#    orientation: "vertical"
+#    spacing: "20dp"
+#    BoxLayout:
+#        orientation: "horizontal"
+#        Button:
+#            text: "X"
+#            size: "50dp", "50dp"
+#            size_hint: None, None
+#            pos_hint: {"left":.5}
+#
+#    Button:
+#        text: "Login"
+#        size_hint: .2, None
+#        height: "60dp"
+#        pos_hint: {"center_x": .5}
+#
+#    Button:
+#        text: "Register"
+#        size_hint: .2, None
+#        height: "60dp"
+#        pos_hint: {"center_x": .5}
+#
+#
+#    BoxLayout:
+#        orientation: "horizontal"
+#        Button:
+#            text: "Settings"
+#            size: "50dp", "50dp"
+#            size_hint: None, None
+#            pos_hint: {"right":.5}
