@@ -1,0 +1,19 @@
+FunkyButtonWidget:
+
+<FunkyButtonWidget>:
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "top"
+        padding: "10dp"
+        TextInput:
+            size_hint: .5, .1
+            text: root.txtInput
+            readonly: "True"
+
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "center"
+        Button:
+            text: "1"
+            size_hint: .2, .2
+            on_press: root.on_button_click()
